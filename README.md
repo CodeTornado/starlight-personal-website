@@ -2,7 +2,7 @@
 
 2021年09月15日16:50:27
 初次提交目前网站的样子
-![](https://shimmerimg.oss-cn-beijing.aliyuncs.com/blog/screenshot/20210915165005.png)
+![](https://shimmerimg.oss-cn-beijing.aliyuncs.com/blog/screenshot/20210915165447.png)
 
 ## Project setup
 ```
