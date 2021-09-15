@@ -10,7 +10,7 @@
 -->
 
 <template>
-  <div class="right-bottom" @click="showOtherButton = !showOtherButton" @focus="showOtherButton = false">
+  <div class="right-bottom" @click="showOtherButton = !showOtherButton">
     <el-progress
       v-show="percentage <= 0"
       type="circle"
@@ -62,6 +62,17 @@ export default {
   },
   mounted () {
     window.addEventListener('scroll', this.scrollPage)
+  },
+  watch: {
+    showOtherButton: function (newVal) {
+      // 显示其他按钮后4 秒后主动隐藏
+      if (newVal) {
+        var _this = this;
+        setTimeout(function () {
+          _this.showOtherButton = false
+        }, 4000);
+      }
+    }
   },
   methods: {
     scrollPage () {
