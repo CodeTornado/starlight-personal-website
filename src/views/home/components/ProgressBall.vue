@@ -10,7 +10,7 @@
 -->
 
 <template>
-  <div class="right-bottom" @click="showOtherButton = !showOtherButton">
+  <div class="right-bottom" @click="showOtherButton = !showOtherButton" @focus="showOtherButton = false">
     <el-progress
       v-show="percentage <= 0"
       type="circle"
