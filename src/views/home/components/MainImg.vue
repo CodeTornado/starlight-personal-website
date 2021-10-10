@@ -34,16 +34,17 @@
 export default {
   data () {
     return {
-      jumpHtmlId: "testDiv",
+      jumpHtmlId: "NewArticle",
       imgUrl: "assets/images/bgi.jpeg",
-      titleTxt: "这是标题 123561",
-      content: "这是内容 12378",
+      titleTxt: "蔡的小站博客",
+      content: "一个正经的程序员博客",
       indexBackgroundDivCss: {
         // backgroundImage: "url(" + require("@/" + imgUrl) + ")",
         // backgroundImage: "url(" + require("../../../assets/images/bgi.jpeg") + ")",
-        background: "url(" + require("../../../assets/images/bgi.jpeg") + ")  no-repeat top center",
-        
-        width: '100vw',
+        background: "url(" + require("../../../assets/images/bgImg.jpg") + ")  no-repeat center top",
+        backgroundSize: 'cover',
+        backgroundColor: 'black',
+        width: '100%',
         height: '100vh',
         backgroundAttachment: "fixed",
         position: "relative"
