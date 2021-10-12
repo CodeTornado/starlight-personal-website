@@ -16,18 +16,18 @@
           v-bind:item="item"
           :key="item.id"
         >
-          <div class="right-img-time-box">
+          <div class="right-img-time-box hvr-sweep-to-bottom">
             <div class="right-time-box">
               <span>30</span>
               <p>2021年10月</p>
             </div>
             <!-- <div class="right-img-box"></div> -->
           </div>
-          <div class="article-text-box">
+          <div class="article-text-box hvr-float">
             <span class="article-text-tag">#文章分类</span>
             <a href="#" class="article-title-a"><h3>文章标题</h3></a>
             <div>最详细的js方法文档，描述加示例，不怕你不会。</div>
-            <a href="#"><span class="show-article-a">查看文章 >>></span></a>
+            <a href="#"><span class="show-article-a hvr-forward cyxy-trs-source">查看文章 >>></span></a>
           </div>
         </li>
       </ul>

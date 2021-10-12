@@ -79,7 +79,7 @@ export default {
   data () {
     return {
       slowDisplay: false,
-      bgMusicShow: true,
+      bgMusicShow: false,
       showOtherButton: false,
       percentage: 0
     }
@@ -139,12 +139,12 @@ export default {
 .right-music-frame {
   position: fixed;
   left: 2rem;
-  bottom: 1rem;
+  top: 1rem;
   z-index: 999;
 }
 .right-music-show-button {
   display: inline-block;
-  bottom: 2rem;
+  top: 2rem;
   position: fixed;
   opacity: 0.8;
 }

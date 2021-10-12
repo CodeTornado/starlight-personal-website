@@ -2,16 +2,16 @@
   <div class="footer-box">
     <div class="footer-left-share">
       2020 - 2021 © Reach -
-      <a href="#" target="_blank" rel="noopener noreferrer">shimmer</a>
+      <a class="hvr-outline-in cyxy-trs-source" href="#" target="_blank" rel="noopener noreferrer">shimmer</a>
     </div>
     <div class="footer-right-share">
-      <a href="https://wpa.qq.com/msgrd?v=3&uin=752521095&site=qq&menu=yes" class="circle">
+      <a href="https://wpa.qq.com/msgrd?v=3&uin=752521095&site=qq&menu=yes" class="circle hvr-grow-shadow cyxy-trs-source">
         <div style="margin: 30% auto" class="el-icon-chat-dot-round"></div>
       </a>
-      <a href="mailto:15600559182@163.com" class="circle">
+      <a href="mailto:15600559182@163.com" class="circle hvr-grow-shadow cyxy-trs-source">
         <div style="margin: 30% auto" class="el-icon-message"></div>
       </a>
-      <a href="https://github.com/CodeTornado/starlight-personal-website/tree/master" class="circle">
+      <a href="https://github.com/CodeTornado/starlight-personal-website/tree/master" class="circle hvr-grow-shadow cyxy-trs-source">
         <div style="margin: 30% auto" class="el-icon-document"></div>
       </a>
     </div>

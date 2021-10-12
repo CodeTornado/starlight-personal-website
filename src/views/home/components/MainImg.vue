@@ -11,7 +11,7 @@
   <div :style="indexBackgroundDivCss">
     <div class="mask-div">
       <div style="text-align: center">
-        <span style="font-size: 2.25rem; line-height: 2">{{ titleTxt }}</span>
+        <span  class="hvr-wobble-top cyxy-trs-source" style="font-size: 2.25rem; line-height: 2">{{ titleTxt }}</span>
         <br />
         <span style="font-size: 1.4rem; opacity: 0.7">{{ content }}</span>
       </div>
