@@ -13,7 +13,7 @@
       <div style="text-align: center">
         <span style="font-size: 2.25rem; line-height: 2">{{ titleTxt }}</span>
         <br />
-        <span style="font-size: 1.4rem">{{ content }}</span>
+        <span style="font-size: 1.4rem; opacity: 0.7">{{ content }}</span>
       </div>
       <div style="position: absolute; bottom: 1rem">
         <a

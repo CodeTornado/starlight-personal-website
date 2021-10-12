@@ -10,7 +10,7 @@
 -->
 <template>
   <div>
-    <div style="position: fixed; left: 2rem; bottom: 1rem; z-index: 999;">
+    <div class="right-music-frame">
       <iframe
         v-show="bgMusicShow"
         frameborder="no"
@@ -19,14 +19,16 @@
         marginheight="0"
         width="280"
         height="52"
-        src="//music.163.com/outchain/player?type=2&id=1482686759&auto=0&height=32"
+        src="//music.163.com/outchain/player?type=2&id=1482686759&auto=1&height=32"
       ></iframe>
       <el-button
-        type="info" 
+        v-show="slowDisplay"
+        type="info"
         size="mini"
-        :style="'display: inline-block; bottom: 2rem; position: fixed; ' + (bgMusicShow ? '' : 'left: 0;')"
+        class="right-music-show-button"
+        :style="bgMusicShow ? '' : 'left: 0;opacity:0.5;'"
         @click="bgMusicShow = !bgMusicShow"
-        >{{ bgMusicShow ? "隐藏 <" : "显示 >" }}</el-button
+        >{{ bgMusicShow ? "隐藏" : "显示" }}</el-button
       >
     </div>
     <div class="right-bottom" @click="showOtherButton = !showOtherButton">
@@ -50,20 +52,20 @@
         <el-button
           type="info"
           icon="el-icon-search"
-          style="position: fixed; right: 8rem; bottom: 3rem"
+          class="left-search-button"
           circle
         ></el-button>
         <el-button
           type="info"
           icon="el-icon-bottom"
-          style="position: fixed; right: 6.5rem; bottom: 6.5rem"
+          class="left-button-scorrll-to-bottom"
           circle
-          @click="scorrllToBootom"
+          @click="scorrllToBottom"
         ></el-button>
         <el-button
           type="info"
           icon="el-icon-top"
-          style="position: fixed; right: 3rem; bottom: 8rem"
+          class="left-button-scorrll-to-top"
           circle
           @click="scorrllToTop"
         ></el-button>
@@ -76,6 +78,7 @@
 export default {
   data () {
     return {
+      slowDisplay: false,
       bgMusicShow: true,
       showOtherButton: false,
       percentage: 0
@@ -83,6 +86,7 @@ export default {
   },
   mounted () {
     window.addEventListener('scroll', this.scrollPage)
+    setTimeout(this.slowDisplayMethod, 1200)
   },
   watch: {
     showOtherButton: function (newVal) {
@@ -96,6 +100,9 @@ export default {
     }
   },
   methods: {
+    slowDisplayMethod () {
+      this.slowDisplay = true
+    },
     scrollPage () {
       var remainingRollingHeighta = document.body.scrollHeight - window.innerHeight;
       var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
@@ -103,7 +110,7 @@ export default {
       // 全部进度为
       this.percentage = Math.round((remainingRollingHeighta - bottomContactDistance) / remainingRollingHeighta * 100);
     },
-    scorrllToBootom () {
+    scorrllToBottom () {
       window.scroll({
         top: document.body.clientHeight,
         left: 0,
@@ -128,5 +135,32 @@ export default {
   bottom: 2rem;
   z-index: 999;
   cursor: pointer;
+}
+.right-music-frame {
+  position: fixed;
+  left: 2rem;
+  bottom: 1rem;
+  z-index: 999;
+}
+.right-music-show-button {
+  display: inline-block;
+  bottom: 2rem;
+  position: fixed;
+  opacity: 0.8;
+}
+.left-search-button {
+  position: fixed;
+  right: 8rem;
+  bottom: 3rem;
+}
+.left-button-scorrll-to-bottom {
+  position: fixed;
+  right: 6.5rem;
+  bottom: 6.5rem;
+}
+.left-button-scorrll-to-top {
+  position: fixed;
+  right: 3rem;
+  bottom: 8rem;
 }
 </style>

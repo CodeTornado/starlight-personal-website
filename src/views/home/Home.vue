@@ -1,10 +1,15 @@
 <template>
   <div>
     <ProgressBall />
+    <header></header>
+
     <MainImg @toParent="scrollIntoView" />
-    <div style="margin: 0 auto; width: 75%;">
-      <div id="NewArticle"><NewArticle /><br /></div>
-    </div>
+    <main>
+      <div style="margin: 0 auto; width: 75%">
+        <div id="NewArticle"><NewArticle /><br /></div>
+      </div>
+    </main>
+    <footer><Footer></Footer></footer>
   </div>
 </template>
 
@@ -12,9 +17,10 @@
 import MainImg from './components/MainImg.vue'
 import ProgressBall from './components/ProgressBall.vue'
 import NewArticle from '../new-article/NewArticle.vue'
+import Footer from '../footer/Footer.vue'
 
 export default {
-  components: { MainImg, ProgressBall, NewArticle },
+  components: { MainImg, ProgressBall, NewArticle, Footer },
   methods: {
     scrollIntoView (htmlId) {
       document.getElementById(htmlId).scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" })
