@@ -3,8 +3,9 @@
     <ProgressBall />
     <MainImg @toParent="scrollIntoView" />
     <TopMenuBar />
-    <main style="margin: 0 auto; width: 75%">
-      <div id="NewArticle"><NewArticle /><br /></div>
+    <main style="margin: 0 auto; width: 75%" id="main-box">
+      <router-view/>
+      <!-- <NewArticle /><br /> -->
     </main>
     <footer>
       <Footer />

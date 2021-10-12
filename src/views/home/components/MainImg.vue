@@ -34,7 +34,7 @@
 export default {
   data () {
     return {
-      jumpHtmlId: "NewArticle",
+      jumpHtmlId: "main-box",
       imgUrl: "assets/images/bgi.jpeg",
       titleTxt: "蔡的小站博客",
       content: "一个正经的程序员博客",
