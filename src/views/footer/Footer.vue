@@ -5,11 +5,14 @@
       <a href="#" target="_blank" rel="noopener noreferrer">shimmer</a>
     </div>
     <div class="footer-right-share">
-      <a href="#" class="circle">
+      <a href="https://wpa.qq.com/msgrd?v=3&uin=752521095&site=qq&menu=yes" class="circle">
         <div style="margin: 30% auto" class="el-icon-chat-dot-round"></div>
       </a>
       <a href="mailto:15600559182@163.com" class="circle">
         <div style="margin: 30% auto" class="el-icon-message"></div>
+      </a>
+      <a href="https://github.com/CodeTornado/starlight-personal-website/tree/master" class="circle">
+        <div style="margin: 30% auto" class="el-icon-document"></div>
       </a>
     </div>
   </div>

@@ -2,9 +2,9 @@
 
 ## 项目简介
 
-[蔡的小站]( https://com.shimmer.fit) 
+[蔡的小站]( https://codetornado.github.io/starlight-personal-website/) 
 
-https://com.shimmer.fit
+https://codetornado.github.io/starlight-personal-website/
 
 这是一个私人网站, 它包含很多功能. 
 

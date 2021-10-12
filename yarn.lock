@@ -1545,9 +1545,9 @@
     "prettier" "^1.18.2"
 
 "@vue/devtools-api@^6.0.0-beta.14":
-  "integrity" "sha1-rXyzhOBi8WW8+cg3MhJb/7wq2D0="
-  "resolved" "https://registry.nlark.com/@vue/devtools-api/download/@vue/devtools-api-6.0.0-beta.15.tgz"
-  "version" "6.0.0-beta.15"
+  "integrity" "sha512-ObzQhgkoVeoyKv+e8+tB/jQBL2smtk/NmC9OmFK8UqdDpoOdv/Kf9pyDWL+IFyM7qLD2C75rszJujvGSPSpGlw=="
+  "resolved" "https://registry.npmjs.org/@vue/devtools-api/-/devtools-api-6.0.0-beta.19.tgz"
+  "version" "6.0.0-beta.19"
 
 "@vue/eslint-config-typescript@^3.1.0":
   "integrity" "sha512-ADH71r7AwE7R1nFxpmr02MeJC5E8WBQPGD+PKPxqQRXtxoLcNkIvqOK78DI1Lt0jH6sQQCmKini0oFzN/CkywQ=="
@@ -9676,9 +9676,9 @@
     "vue-hot-reload-api" "^2.3.0"
     "vue-style-loader" "^4.1.0"
 
-"vue-router@^4.0.0-0":
-  "integrity" "sha1-zWSaCUHGNSgXY6IJZbWZZD3caO0="
-  "resolved" "https://registry.nlark.com/vue-router/download/vue-router-4.0.11.tgz"
+"vue-router@^4.0.11":
+  "integrity" "sha512-sha6I8fx9HWtvTrFZfxZkiQQBpqSeT+UCwauYjkdOQYRvwsGwimlQQE2ayqUwuuXGzquFpCPoXzYKWlzL4OuXg=="
+  "resolved" "https://registry.npmjs.org/vue-router/-/vue-router-4.0.11.tgz"
   "version" "4.0.11"
   dependencies:
     "@vue/devtools-api" "^6.0.0-beta.14"
